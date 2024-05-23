@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vlad's Portfolio</title>
+    <link rel="stylesheet" href="./home.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../Logo white high-res.png" alt="Vlad COMPANY Logo" />
+                <span>Vlad COMPANY</span>
+            </div>
+            <nav>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="./aboutMe.html">About me</a></li>
+                    <li><a href="./myWorks.html">My works</a></li>
+                    <li><a href="./contact.html">Contact me</a></li>
+                    <li><a href="./home.html" class="home-btn">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="intro_container">
+            <div class="intro-text">
+                <h1>Привіт <span>👋</span></h1>
+                <h2>Я ВЛАД</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Lacus laoreet non curabitur
+                    gravida arcu ac tortor. Ligula ullamcorper malesuada proin libero nunc
+                    consequat interdum. Et netus et malesuada fames ac turpis egestas integer
+                    eget. Morbi tristique senectus et netus et. Morbi tincidunt augue interdum
+                    velit euismod in pellentesque massa.
+                </p>
+                <a href="./myWorks.html" class="btn">My Works</a>
+            </div>
+            <div class="intro-image">
+                <img src="../Fire.gif" alt="Flame" />
+            </div>
+        </div>
+    </section>
+
+    <section class="my-works">
+        <div class="container">
+            <h2>My Works</h2>
+            <div class="works-gallery">
+                <div class="work-item">
+                    <img src="../Fire.gif" alt="Work 1" />
+                </div>
+                <div class="work-item">
+                    <img src="../MacBook Pro 16_ - 1.png" alt="Work 2" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-skills">
+        <div class="container">
+            <h2>My skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>Front-end dev</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Lacus laoreet non
+                        curabitur gravida arcu ac tortor. Ligula ullamcorper malesuada proin libero
+                        nunc consequat interdum.
+                    </p>
+                </div>
+                <div class="skill-item">
+                    <h3>Back-end dev</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Lacus laoreet non
+                        curabitur gravida arcu ac tortor. Ligula ullamcorper malesuada proin libero
+                        nunc consequat interdum.
+                    </p>
+                </div>
+                <div class="skill-item">
+                    <h3>Full stack dev</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Lacus laoreet non
+                        curabitur gravida arcu ac tortor. Ligula ullamcorper malesuada proin libero
+                        nunc consequat interdum.
+                    </p>
+                </div>
+            </div>
+            <a href="./contact.html" class="btn">Contact me</a>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.burger')
+            const nav = document.querySelector('.nav-links')
+
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('nav-active')
+                burger.classList.toggle('toggle')
+            })
+        })
+    </script>
+</body>
+</html>

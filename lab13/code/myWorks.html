@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vlad's Portfolio</title>
+    <link rel="stylesheet" href="./myWorks.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../Logo white high-res.png" alt="Vlad COMPANY Logo" />
+                <span>Vlad COMPANY</span>
+            </div>
+            <nav>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="./aboutMe.html">About me</a></li>
+                    <li><a href="./myWorks.html">My works</a></li>
+                    <li><a href="./contact.html">Contact me</a></li>
+                    <li><a href="./home.html" class="home-btn">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="my-works">
+        <div class="container">
+            <div class="work-item">
+                <img src="../Fire.gif" alt="Fire Animation" />
+                <p>Fire.gif</p>
+            </div>
+            <div class="work-item">
+                <img src="../MacBook Pro 16_ - 1.png" alt="Lab 9" />
+                <div class="description">
+                    <p>Lab 9</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.burger')
+            const nav = document.querySelector('.nav-links')
+
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('nav-active')
+                burger.classList.toggle('toggle')
+            })
+        })
+    </script>
+</body>
+</html>

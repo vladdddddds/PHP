@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vlad's Portfolio</title>
+    <link rel="stylesheet" href="./contact.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../Logo white high-res.png" alt="Vlad COMPANY Logo" />
+                <span>Vlad COMPANY</span>
+            </div>
+            <nav>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="./aboutMe.html">About me</a></li>
+                    <li><a href="./myWorks.html">My works</a></li>
+                    <li><a href="./contact.html">Contact me</a></li>
+                    <li><a href="./home.html" class="home-btn">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-item">
+                <img src="../Logo white high-res.png" alt="Checkmate Logo" />
+            </div>
+            <div class="contact-item">
+                <h2>Let's talk!</h2>
+                <hr />
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Lacus laoreet non curabitur
+                    gravida arcu ac tortor. Ligula ullamcorper malesuada proin libero nunc
+                    consequat interdum.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+                    <a href="#"><img src="github-icon.png" alt="GitHub" /></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
+                    <a href="#"><img src="telegram-icon.png" alt="Telegram" /></a>
+                </div>
+                <a href="mailto:email.email@example.com" class="btn">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.burger')
+            const nav = document.querySelector('.nav-links')
+
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('nav-active')
+                burger.classList.toggle('toggle')
+            })
+        })
+    </script>
+</body>
+</html>

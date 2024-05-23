@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: auto;
+	height: 100vh;
+}
+
+.logo,
+.description,
+.fonts {
+	padding: 20px;
+}
+
+.logo {
+	background-color: #222831;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo h1 {
+	margin: 0 0 20px 0;
+}
+
+.logo-images img {
+	display: block;
+	margin: 10px 0;
+	width: 200px;
+}
+
+.description {
+	background-color: #76ABAE;
+	color: #333;
+}
+
+.description h1 {
+	margin-top: 0;
+}
+
+.fonts {
+	background-color: #EEEEEE;
+	color: #333;
+}
+
+.fonts h1 {
+	margin-top: 0;
+}
+
+.font-sample {
+	margin-bottom: 20px;
+}
